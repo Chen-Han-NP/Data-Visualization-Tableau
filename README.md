@@ -48,8 +48,10 @@ MAKEDATE([Arrival Date Year],MONTH(DATEPARSE("MMM", [Arrival Date Month])), [Arr
 ![image](https://user-images.githubusercontent.com/73086331/144263614-14838162-f102-49bb-8c9e-78efdcfe6e50.png)
 
 <br> 
-2.	Booking Cancellation! <br>
+
+
 ![image](https://user-images.githubusercontent.com/73086331/144263985-f5757940-8071-409b-ad07-4fb699378bad.png)
+
 
 
 <br>
