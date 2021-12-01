@@ -27,6 +27,38 @@ Profitability (areas that the company can pay attention to increase the profit)
 2.	How is the meal type that the customer chose related to the customer ADR?
 3.	How is the customer type related to the customer ADR?
 
+## Data Preparation
+-	State of data
+The initial state of data is not cleaned yet, as some of the attributes such as is_canceled and is_repeated_guest is represented in 0 and 1, which might cause confusion to Tableau to interpret it as measures. Thus, a substantial data cleanup is needed in order to make data visualization easier in Tableau.
+
+-	Data cleansing
+1.	Make a new calculated field “IsCanceled” with the following command: 
+[Is Canceled] = 1, so as to convert the 0s and 1s in “Is Canceled” to Boolean values.
+2.	Make a new calculated field “IsRepeatedGuest” with the following command:  
+IF [Is Repeated Guest] = 1 THEN "Old Customer"
+ELSE "New Customer"
+END
+3.	Make a new calculated field “Arrival Date” with the following command:
+MAKEDATE([Arrival Date Year],MONTH(DATEPARSE("MMM", [Arrival Date Month])), [Arrival Date Day Of Month])
+4.	Make a new calculated field “Total Stay” with the following command:
+[Stays In Week Nights] + [Stays In Weekend Nights]
+
+## Dash board <br>
+1.	Customer Analysis! <br>
+![image](https://user-images.githubusercontent.com/73086331/144263614-14838162-f102-49bb-8c9e-78efdcfe6e50.png)
+
+<br> 
+2.	Booking Cancellation! <br>
+![image](https://user-images.githubusercontent.com/73086331/144263748-1be55364-a7b1-4333-8529-7a94ec86456c.png)
+<br>
+
+3.	Profitability! <br>
+![image](https://user-images.githubusercontent.com/73086331/144263816-6a0a3790-41b0-4cc3-89fc-9511277db29f.png)
+
+
+
+
+
 
 
  
