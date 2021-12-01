@@ -44,19 +44,13 @@ MAKEDATE([Arrival Date Year],MONTH(DATEPARSE("MMM", [Arrival Date Month])), [Arr
 [Stays In Week Nights] + [Stays In Weekend Nights]
 
 ## Dash board <br>
-1.	Customer Analysis! <br>
-![image](https://user-images.githubusercontent.com/73086331/144263614-14838162-f102-49bb-8c9e-78efdcfe6e50.png)
 
-<br> 
+![image](https://user-images.githubusercontent.com/73086331/144263614-14838162-f102-49bb-8c9e-78efdcfe6e50.png)
 
 
 ![image](https://user-images.githubusercontent.com/73086331/144263985-f5757940-8071-409b-ad07-4fb699378bad.png)
 
 
-
-<br>
-
-3.	Profitability! <br>
 ![image](https://user-images.githubusercontent.com/73086331/144263816-6a0a3790-41b0-4cc3-89fc-9511277db29f.png)
 
 
